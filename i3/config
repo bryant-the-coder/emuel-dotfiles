@@ -183,19 +183,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # default window
-new_window none
-new_float normal
-hide_edge_borders both
+# new_window none
+# new_float normal
+# hide_edge_borders both
 
 # gaps settings
 gaps inner 10
 gaps outer 10 
-smart_gaps on
+# smart_gaps on
 
-set $bg-color 	         #000000
-set $inactive-bg-color   #030303
+set $bg-color 	         #121212
+set $inactive-bg-color   #101010
 set $text-color          #f3f4f5
-set $inactive-text-color #7c7c7c
+set $inactive-text-color #4c4c4c
 set $urgent-bg-color     #E53935
 
 # window colors
