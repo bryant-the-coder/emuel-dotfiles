@@ -2,14 +2,18 @@ set $mod Mod4
 
 ##### Autostart applications
 exec --no-startup-id megasync 
+exec --no-startup-id redshift
+exec --no-startup-id firefox
+exec --no-startup-id konsole
 
 ##### Window shortcuts
 bindsym $mod+c exec --no-startup-id firefox
-#bindsym $mod+Shift+c exec --no-startup-id google-chrome
+bindsym $mod+t exec --no-startup-id com.microsoft.Teams
+bindsym $mod+Shift+c exec --no-startup-id google-chrome
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:System San Francisco Display 10 
+font pango: Iosevka Nerd Font 9 
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -34,8 +38,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +4% # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 4%- # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- # decrease screen brightness
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -44,12 +48,12 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id konsole
 
 # kill focused window
-bindsym $mod++q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 10"
 # A more modern dmenu replacement is rofi:
-bindcode $mod+40 exec --no-startup-id "rofi -combi-modi window,drun,ssh -theme gruvbox-dark-hard -font 'System San Francisco Display 11' -show drun -icon-theme 'Tela Icons Black Dark' -show-icons"
+bindcode $mod+40 exec --no-startup-id "rofi -combi-modi window,drun,ssh -theme material -font 'System San Francisco Display 11' -show drun -icon-theme 'Tela Icons Black Dark' -show-icons"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -60,23 +64,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Left focus left
-#bindsym $mod+Down focus down
-#bindsym $mod+Up focus up
-#bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Shift+Left move left
-#bindsym $mod+Shift+Down move down
-#bindsym $mod+Shift+Up move up
-#bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+b split h
@@ -142,7 +134,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -177,25 +169,25 @@ gaps horizontal 2
 smart_borders on 
 smart_borders no_gaps
 
-set $bg-color 	         #555559
-set $inactive-bg-color   #373737
+set $bg-color 	         #808080
+set $inactive-bg-color   #121212
 set $text-color          #ededed
 #set $inactive-text-color #4c4c4c
 #set $urgent-bg-color     #E53935
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #373737
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #373737
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #373737
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #373737
+client.focused          $bg-color           $bg-color          $text-color          #000000
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #000000
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #000000
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #000000
 
 ## popups
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/night-city.jpg
+exec --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/mountain.jpeg
 
 ##### Specify application's default workspaces,
 #assign [class="firefox"] 1
