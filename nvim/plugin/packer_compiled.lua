@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["monochrome.nvim"] = {
+    loaded = true,
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
+    url = "https://github.com/kdheepak/monochrome.nvim"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
