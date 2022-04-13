@@ -63,11 +63,9 @@ return packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua' -- Colorizes color codes
 
   -- Colorschemes
-  use 'bluz71/vim-nightfly-guicolors'
-  use 'kdheepak/monochrome.nvim'
-  
-  -- Transparency
-  use 'xiyaowong/nvim-transparent'
+  --use 'rktjmp/lush.nvim'
+  --use 'mcchrish/zenbones.nvim'
+  use 'tanvirtin/monokai.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

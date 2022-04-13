@@ -149,10 +149,10 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["monochrome.nvim"] = {
+  ["monokai.nvim"] = {
     loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
-    url = "https://github.com/kdheepak/monochrome.nvim"
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -188,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -253,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
   ["which-key.nvim"] = {
     loaded = true,
