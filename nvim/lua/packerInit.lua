@@ -64,7 +64,9 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use 'bluz71/vim-nightfly-guicolors'
-  use 'kdheepak/monochrome.nvim'
+  use 'xiyaowong/nvim-transparent'
+  use 'rktjmp/lush.nvim'
+  use 'Lokaltog/monotone.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

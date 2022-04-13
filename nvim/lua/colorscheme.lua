@@ -1,3 +1,3 @@
 vim.cmd 'set background=dark'
-vim.cmd 'colorscheme monochrome'
+vim.cmd 'colorscheme monotone'
 
