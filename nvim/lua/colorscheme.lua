@@ -1,2 +1,3 @@
---vim.cmd 'colorscheme nightfly'
+vim.cmd 'set background=dark'
 vim.cmd 'colorscheme monochrome'
+

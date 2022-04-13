@@ -63,7 +63,6 @@ return packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua' -- Colorizes color codes
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use 'bluz71/vim-nightfly-guicolors'
   use 'kdheepak/monochrome.nvim'
 
