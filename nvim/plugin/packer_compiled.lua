@@ -149,15 +149,10 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["lush.nvim"] = {
+  ["monochrome.nvim"] = {
     loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
-  },
-  ["monotone.nvim"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monotone.nvim",
-    url = "https://github.com/Lokaltog/monotone.nvim"
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
+    url = "https://github.com/kdheepak/monochrome.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -193,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
