@@ -176,7 +176,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/lightblack.png
+exec_always --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/keyb2.png
 
 ##### Specify application's default workspaces,
 #assign [class="firefox"] 1
