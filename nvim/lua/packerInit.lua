@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "Pocco81/AutoSave.nvim"
   use 'norcalli/nvim-colorizer.lua' -- Colorizes color codes
+  use 'RRethy/vim-illuminate'
 
   -- Colorschemes
   use 'thepogsupreme/mountain.nvim'
