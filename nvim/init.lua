@@ -1,6 +1,6 @@
 require "packerInit"
 require "options"
 require "keymaps"
-require "colorscheme"
 require "plugins"
 require "autocommands"
+require "colorscheme"

@@ -149,10 +149,10 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["monokai.nvim"] = {
+  ["mountain.nvim"] = {
     loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/monokai.nvim",
-    url = "https://github.com/tanvirtin/monokai.nvim"
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/mountain.nvim",
+    url = "https://github.com/thepogsupreme/mountain.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,

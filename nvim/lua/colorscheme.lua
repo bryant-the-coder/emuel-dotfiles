@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme monokai_ristretto'
+vim.cmd 'colorscheme mountain'
