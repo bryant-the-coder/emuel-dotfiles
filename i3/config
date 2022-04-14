@@ -4,7 +4,7 @@ set $mod Mod4
 exec --no-startup-id megasync 
 exec --no-startup-id redshift
 exec --no-startup-id firefox
-exec --no-startup-id konsole
+#exec --no-startup-id konsole
 
 ##### Window shortcuts
 bindsym $mod+c exec --no-startup-id firefox
