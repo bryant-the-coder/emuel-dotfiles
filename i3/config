@@ -157,8 +157,8 @@ bindsym $mod+r mode "resize"
 
 ##### i3-gaps ############## 
 for_window [class=".*"] border pixel 2 #* 
-gaps inner 12 
-gaps top 42
+gaps inner 10 
+gaps top 43
 smart_borders on 
 
 set $bg-color 	         #3f3f3f
