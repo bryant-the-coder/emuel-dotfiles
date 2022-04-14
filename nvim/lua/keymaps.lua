@@ -46,6 +46,7 @@ vim.g.mapleader = " "
   -- Naviagate buffers
   keymap("n", "<S-l>", ":bnext<CR>", opts)
   keymap("n", "<S-h>", ":bprevious<CR>", opts)
+  keymap("n", "<A-c>", ":Bdelete<CR>", opts)
 
   -- Move text up and down
   keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
