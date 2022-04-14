@@ -162,8 +162,8 @@ bindsym $mod+r mode "resize"
 
 ##### i3-gaps ############## 
 for_window [class=".*"] border pixel 2 #* 
-gaps inner 11 
-gaps top 44
+gaps inner 12 
+gaps top 42
 ################# i3-radius ####################### 
 smart_borders on 
 
