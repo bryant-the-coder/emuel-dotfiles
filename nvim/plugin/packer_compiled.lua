@@ -235,6 +235,11 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
+  ["shade.nvim"] = {
+    loaded = true,
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/shade.nvim",
+    url = "https://github.com/sunjon/shade.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/telescope.nvim",

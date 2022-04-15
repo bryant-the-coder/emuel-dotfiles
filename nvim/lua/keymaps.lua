@@ -46,16 +46,18 @@ vim.g.mapleader = " "
   -- Naviagate buffers
   keymap("n", "<S-l>", ":bnext<CR>", opts)
   keymap("n", "<S-h>", ":bprevious<CR>", opts)
---  keymap("n", "<A-c>", ":Bdelete<CR>", opts)
+  keymap("n", "Q", "<cmd>Bdelete!<CR>", opts)
 
   -- Move text up and down
   keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
   keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
   -- Insert --
-  -- Press jk/JK fast to enter
+  -- Press jk/JK or kj/KJ fast to enter
   keymap("i", "jk", "<ESC>", opts)
   keymap("i", "JK", "<ESC>", opts)
+  keymap("i", "kj", "<ESC>", opts)
+  keymap("i", "KJ", "<ESC>", opts)
 
   -- Visual --
   -- Stay in indent mode
@@ -85,7 +87,6 @@ vim.g.mapleader = " "
   keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)
   -- NOTE: the fact that tab and ctrl-i are the same is stupid
   -- keymap("n", "<TAB>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-  keymap("n", "Q", "<cmd>Bdelete!<CR>", opts)
   keymap("n", "<F1>", ":e ~/Notes/<cr>", opts)
   keymap("n", "<F3>", ":e .<cr>", opts)
   keymap("n", "<F4>", "<cmd>Telescope resume<cr>", opts)
@@ -133,4 +134,5 @@ keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', opts)
 keymap('n', '<leader>fh', '<cmd>Telescope oldfiles<cr>', opts)
 keymap('n', '<leader>fp', '<cmd>Telescope projects<cr>', opts)
 
+-- Alpha
 keymap('n', '<Space>fa', ':Alpha<CR>', opts)
