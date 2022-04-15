@@ -1,4 +1,4 @@
-[Emuel](https://github.com/emuel-vassallo)['s dotfiles']
+[Emuel](https://github.com/emuel-vassallo)'s dotfiles'
 ==========================
 
 Screenshots
