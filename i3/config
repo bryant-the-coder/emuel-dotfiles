@@ -152,15 +152,15 @@ gaps inner 10
 gaps top 44
 # smart_borders on 
 
-set $bg-color 	         #262626
-set $inactive-bg-color   #191919
+set $bg-color 	         #4c4c4c
+set $inactive-bg-color   #262626
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #262626
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #262626
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #262626
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #262626
+client.focused          $bg-color           $bg-color          $text-color         $bg-color
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color  
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color         $bg-color 
 
 ## popups
 for_window [window_role="pop-up"] floating enable
