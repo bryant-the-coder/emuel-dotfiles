@@ -64,7 +64,11 @@ return packer.startup(function(use)
   use 'RRethy/vim-illuminate'
 
   -- Colorschemes
-  use 'thepogsupreme/mountain.nvim'
+  --use 'thepogsupreme/mountain.nvim'
+  use {'pradyungn/Mountain',
+      rtp = "vim",
+      config = "vim.cmd('colorscheme mountain')"
+  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

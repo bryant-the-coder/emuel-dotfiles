@@ -89,6 +89,12 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  Mountain = {
+    config = { "vim.cmd('colorscheme mountain')" },
+    loaded = true,
+    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/Mountain/vim",
+    url = "https://github.com/pradyungn/Mountain"
+  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -148,11 +154,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["mountain.nvim"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/mountain.nvim",
-    url = "https://github.com/thepogsupreme/mountain.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -262,6 +263,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/emuel/.local/share/nvim/site/pack/packer/start/Mountain/vim"
+time([[Runtimepath customization]], false)
+-- Config for: Mountain
+time([[Config for Mountain]], true)
+vim.cmd('colorscheme mountain')
+time([[Config for Mountain]], false)
 if should_profile then save_profiles() end
 
 end)
