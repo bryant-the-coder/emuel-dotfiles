@@ -4,7 +4,7 @@ set $mod Mod4
 exec --no-startup-id megasync 
 exec --no-startup-id redshift
 exec --no-startup-id firefox
-#exec --no-startup-id konsole
+#exec --no-startup-id kitty
 
 ##### Window shortcuts
 bindsym $mod+c exec --no-startup-id firefox
@@ -38,14 +38,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5% # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- # decrease screen brightness
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id konsole
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -161,8 +161,8 @@ gaps inner 10
 gaps top 43
 smart_borders on 
 
-set $bg-color 	         #3f3f3f
-set $inactive-bg-color   #121212
+set $bg-color 	         #2f2f2f
+set $inactive-bg-color   #181818
 
 # window colors
 #                       border              background         text                 indicator
@@ -176,11 +176,11 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/keyb2.png
+exec_always --no-startup-id feh --bg-scale /home/emuel/Pictures/Wallpapers/lightblack.png
 
 ##### Specify application's default workspaces,
 #assign [class="firefox"] 1
-#assign [class="konsole"] 1
+#assign [class="kitty"] 1
 
 # polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
