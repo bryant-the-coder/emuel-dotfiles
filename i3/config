@@ -147,9 +147,9 @@ bindsym $mod+Ctrl+l resize grow width 100 px or 10 ppt
 # hide_edge_borders both
 
 ##### i3-gaps ############## 
-for_window [class=".*"] border pixel 2 #* 
+for_window [class=".*"] border pixel 3 #* 
 gaps inner 10 
-gaps top 44
+gaps top 45
 # smart_borders on 
 
 set $bg-color 	         #4c4c4c
@@ -167,7 +167,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/lightblack.png
+exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/solid-0f0f0f.jpeg
 
 ##### Specify application's default workspaces,
 #assign [class="firefox"] 1
