@@ -148,7 +148,7 @@ gaps top 45
 # smart_borders on 
 
 set $bg-color 	         #767676
-set $inactive-bg-color   #393939
+set $inactive-bg-color   #262626
 
 # window colors
 #                       border              background         text                 indicator
@@ -172,4 +172,4 @@ exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 
 # picom 
-# exec_always --no-startup-id picom --experimental-backend
+# exec_always --no-startup-id picom
