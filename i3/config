@@ -152,8 +152,8 @@ gaps inner 10
 gaps top 45
 # smart_borders on 
 
-set $bg-color 	         #4c4c4c
-set $inactive-bg-color   #262626
+set $bg-color 	         #767676
+set $inactive-bg-color   #393939
 
 # window colors
 #                       border              background         text                 indicator
