@@ -55,7 +55,7 @@ vim.g.mapleader = " "
   keymap("n", "<leader>6",  "<cmd>BufferLineGoToBuffer 6<CR>", opts)
   keymap("n", "<leader>7",  "<cmd>BufferLineGoToBuffer 7<CR>", opts)
   keymap("n", "<leader>8",  "<cmd>BufferLineGoToBuffer 8<CR>", opts)
-  keymap("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", opts)
+  keymap("n", "<leader>9",  "<cmd>BufferLineGoToBuffer 9<CR>", opts)
 
   -- Move text up and down
   keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)

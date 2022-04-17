@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
     url = "https://github.com/Pocco81/AutoSave.nvim"
   },
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "/home/emuel/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   ["FixCursorHold.nvim"] = {
     loaded = true,
     path = "/home/emuel/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
