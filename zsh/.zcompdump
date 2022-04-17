@@ -1,4 +1,4 @@
-#files: 788	version: 5.8.1
+#files: 791	version: 5.8.1
 
 _comps=(
 '-' '_precommand'
@@ -190,6 +190,7 @@ _comps=(
 'composite' '_imagemagick'
 'compress' '_compress'
 'conch' '_twisted'
+'conda' '_conda'
 '-condition-' '_condition'
 'config.status' '_configure'
 'configure' '_configure'
@@ -352,6 +353,7 @@ _comps=(
 'fmttest' '_mh'
 'fned' '_zed'
 'fnext' '_mh'
+'fnm' '_fnm'
 'fold' '_fold'
 'folder' '_mh'
 'folders' '_mh'
@@ -717,6 +719,7 @@ _comps=(
 'make' '_make'
 'makeinfo' '_texinfo'
 'makepkg' '_pkgtool'
+'mamba' '_conda'
 'man' '_man'
 'manage.py' '_django'
 'manila' '_openstack'
@@ -1789,7 +1792,7 @@ autoload -Uz _bluetoothctl _bootctl _busctl _bwrap _codium \
             _zmodload _zmv _zparseopts _zpty _zsh-mime-handler \
             _zsocket _zstyle _ztodo _hwinfo _osc \
             _rpm _SUSEconfig _yast _zypper _docker \
-            _git
+            _git _conda _conda _fnm
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs
