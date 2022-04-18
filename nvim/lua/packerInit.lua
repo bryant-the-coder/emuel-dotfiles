@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-ts-autotag" -- Auto close and auto rename html tags
-  -- use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
@@ -65,7 +65,6 @@ return packer.startup(function(use)
   use 'sunjon/shade.nvim'
 
   -- Colorschemes
-  --use 'thepogsupreme/mountain.nvim'
   use {'pradyungn/Mountain',
       rtp = "vim",
       config = "vim.cmd('colorscheme mountain')"
