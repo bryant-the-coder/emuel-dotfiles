@@ -11,22 +11,11 @@ Screenshots
 Installation
 ----------
 
-Fonts
--------------
-Iosevka Nerd Font:
-```
-https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip
-```
-FiraMono Nerd Font:
-```
-https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraMono.zip
-```
-
 i3-gaps
 -------------
 ```
 git clone https://aur.archlinux.org/i3-gaps-next-git.git
-cd 
+cd i3-gaps-next-git
 makepkg -si
 ```
 
@@ -65,6 +54,14 @@ Fnm
 -------------
 ```
 curl -fsSL https://fnm.vercel.app/install | bash
+```
+
+Zsh-completions
+-------------
+```
+git clone https://aur.archlinux.org/zsh-completions-git.git
+cd zsh-completions-git
+makepkg -sit
 ```
 
 Ranger
