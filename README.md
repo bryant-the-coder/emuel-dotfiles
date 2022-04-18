@@ -61,6 +61,12 @@ Zsh
 sudo pacman -S zsh
 ```
 
+Fnm
+-------------
+```
+curl -fsSL https://fnm.vercel.app/install | bash
+```
+
 Ranger
 -------------
 ```https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraMono.zip
