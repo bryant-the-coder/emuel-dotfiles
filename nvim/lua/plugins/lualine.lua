@@ -60,12 +60,12 @@ local filename = {
 
 -- cool function for progress
 local progress = function()
-local current_line = vim.fn.line(".")
-local total_lines = vim.fn.line("$")
-local line_ratio = current_line / total_lines
-local percentage = math.floor(line_ratio * 100)
-local symbol = "٪"
-return percentage .. symbol
+  local current_line = vim.fn.line(".")
+  local total_lines = vim.fn.line("$")
+  local line_ratio = current_line / total_lines
+  local percentage = math.floor(line_ratio * 100)
+  local symbol = "٪"
+  return percentage .. symbol
 end
 
 local spaces = function()
@@ -88,7 +88,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { branch },
 		lualine_y = { diagnostics },
-		lualine_z = { progress },
+		--lualine_z = { progress },
 	},
 	inactive_sections = {
 		lualine_a = {},
