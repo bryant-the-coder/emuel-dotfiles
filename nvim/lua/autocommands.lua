@@ -5,6 +5,8 @@ vim.cmd [[
     autocmd TextYankPost * silent! lua vim.highlight.on_yank({higroup="IncSearch", timeout=200})
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
+    autocmd ColorScheme * highlight! link SignColumn LineNr
+    
   augroup end
 
   augroup _git

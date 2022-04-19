@@ -65,6 +65,7 @@ return packer.startup(function(use)
   use 'sunjon/shade.nvim'
 
   -- Colorschemes
+  -- use 'thepogsupreme/mountain.nvim'
   use {'pradyungn/Mountain',
       rtp = "vim",
       config = "vim.cmd('colorscheme mountain')"

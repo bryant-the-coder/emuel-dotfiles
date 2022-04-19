@@ -21,7 +21,6 @@ local diff = {
 	"diff",
 	colored = false,
 	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
-  cond = hide_in_width,
 }
 
 local mode = {
@@ -58,13 +57,8 @@ local filename = {
   padding = 1,
 }
 
--- cool function for progress
 local function progress()
   return '%3p%%'
-end
-
-local spaces = function()
-	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
 lualine.setup({
@@ -78,8 +72,8 @@ lualine.setup({
 	},
 	sections = {
 		lualine_a = { mode },
-		lualine_b = { filetype },
-    lualine_c = { filename, diff},
+		lualine_b = { filetype, filename},
+    lualine_c = { diff},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { branch },
 		lualine_y = { diagnostics },
