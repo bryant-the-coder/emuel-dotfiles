@@ -14,14 +14,14 @@ local diagnostics = {
 	symbols = { error = " ", warn = " " },
 	colored = false,
 	update_in_insert = false,
-	always_visible = false,
+	always_visible = true,
 }
 
 local diff = {
 	"diff",
 	colored = false,
 	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
-  cond = hide_in_width
+  cond = hide_in_width,
 }
 
 local mode = {
@@ -59,13 +59,8 @@ local filename = {
 }
 
 -- cool function for progress
-local progress = function()
-  local current_line = vim.fn.line(".")
-  local total_lines = vim.fn.line("$")
-  local line_ratio = current_line / total_lines
-  local percentage = math.floor(line_ratio * 100)
-  local symbol = "٪"
-  return percentage .. symbol
+local function progress()
+  return '%3p%%'
 end
 
 local spaces = function()
@@ -88,13 +83,13 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { branch },
 		lualine_y = { diagnostics },
-		--lualine_z = { progress },
+		lualine_z = { progress },
 	},
 	inactive_sections = {
 		lualine_a = {},
 		lualine_b = {},
 		lualine_c = {},
-		lualine_x = { "location" },
+		lualine_x = {},
 		lualine_y = {},
 		lualine_z = {},
 	},
