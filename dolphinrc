@@ -1,0 +1,33 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[ExtractDialog]
+DirHistory[$e]=$HOME/Desktop/.fonts/
+eDP Height 1920x1080=560
+eDP Width 1920x1080=1280
+
+[General]
+Version=201
+ViewPropsTimestamp=2022,4,18,23,3,41.898
+
+[IconsMode]
+FontWeight=50
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Desktop,file:$HOME/Desktop
+Recent URLs[$e]=file:$HOME/Desktop/.fonts/
+detailViewIconSize=16
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP Height 1920x1080=763
+eDP Width 1920x1080=1034
+eDP XPosition 1920x1080=580
+eDP YPosition 1920x1080=44
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail

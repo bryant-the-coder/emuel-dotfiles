@@ -48,6 +48,7 @@ Zsh
 -------------
 ```
 sudo pacman -S zsh
+chsh -s $(which zsh)
 ```
 
 Fnm
@@ -80,8 +81,10 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 ```
 
-Redshift, Brightnessctl
+General applications
 -------------- 
 ```
-sudo pacman -S redshift brightnessctl
+sudo pacman -S redshift brightnessctl npm
+yay -S google-chrome-stable
+sudo npm -i g live-server prettier black pyright eslint html css
 ```

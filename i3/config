@@ -9,7 +9,8 @@ exec --no-startup-id firefox
 ##### Window shortcuts
 bindsym $mod+c exec --no-startup-id firefox
 bindsym $mod+t exec --no-startup-id flatpak run com.microsoft.Teams
-bindsym $mod+Shift+c exec --no-startup-id google-chrome
+bindsym $mod+i exec --no-startup-id flatpak run com.spotify.Client
+bindsym $mod+Shift+c exec --no-startup-id chromium
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,8 +33,8 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -147,7 +148,7 @@ gaps inner 10
 gaps top 45
 # smart_borders on 
 
-set $bg-color 	         #767676
+set $bg-color 	         #a0a0a0
 set $inactive-bg-color   #262626
 
 # window colors
@@ -162,14 +163,10 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/solid-0f0f0f.jpeg
-
-##### Specify application's default workspaces,
-#assign [class="firefox"] 1
-#assign [class="kitty"] 1
+exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/solid.jpeg
 
 # polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 
 # picom 
-# exec_always --no-startup-id picom
+exec_always --no-startup-id picom
