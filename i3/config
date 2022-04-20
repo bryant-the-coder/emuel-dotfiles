@@ -3,8 +3,8 @@ set $mod Mod4
 ##### Autostart applications
 exec --no-startup-id megasync 
 exec --no-startup-id redshift
-exec --no-startup-id firefox
-#exec --no-startup-id kitty
+# exec --no-startup-id firefox
+# exec --no-startup-id kitty
 
 ##### Window shortcuts
 bindsym $mod+c exec --no-startup-id firefox
@@ -148,7 +148,7 @@ gaps inner 10
 gaps top 45
 # smart_borders on 
 
-set $bg-color 	         #a0a0a0
+set $bg-color 	         #767676
 set $inactive-bg-color   #262626
 
 # window colors
@@ -163,7 +163,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/solid.jpeg
+exec_always --no-startup-id feh --bg-scale /home/emuel/.config/images/wallpapers/mountain.jpeg
 
 # polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
