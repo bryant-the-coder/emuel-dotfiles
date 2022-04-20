@@ -1,9 +1,7 @@
 local fn = vim.fn
 
 -- Automatically install packer
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
-if fn.empty(fn.glob(install_path)) > 0 then PACKER_BOOTSTRAP = fn.system {
-    "git",
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim" if fn.empty(fn.glob(install_path)) > 0 then PACKER_BOOTSTRAP = fn.system { "git",
     "clone",
     "--depth",
     "1",
@@ -62,11 +60,8 @@ return packer.startup(function(use)
   use 'sunjon/shade.nvim'
 
   -- Colorschemes
-  use {'lokesh-krishna/mountain.nvim',
-    --config=vim.cmd('colorscheme mountain')
-  }
+  --use 'bryant-the-coder/nvim-base16.lua'
   use 'bryant-the-coder/nvim-base16.lua'
-  -- use "norcalli/nvim-base16.lua"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
